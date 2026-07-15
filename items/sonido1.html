@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sonido 1</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<h1>🔊 Sonido 1</h1>
+<audio id="player" src="../assets/sounds/sonido1.mp3"></audio>
+<button onclick="document.getElementById('player').play()">▶️ Reproducir</button>
+<script>
+  // Intenta reproducir automáticamente; si el navegador lo bloquea, queda el botón.
+  document.getElementById('player').play().catch(() => {});
+</script>
+</body>
+</html>
